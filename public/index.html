@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobi Resume</title>
+    <link rel='stylesheet' type='text/css' href='styles.css' />
+</head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+
+var eventposted=0;
+
+$(document).ready(function(){
+ $('input.button').click(function() {
+   window.setInterval(foo, 100);
+ });
+});
+
+function foo(){
+ if(($(".form-submission-text").is(':visible')) && (eventposted==0)){
+   window.location = "<b>result.html</b>";
+   eventposted=1;
+ }
+}
+
+</script>
+<body>
+    <div class='row'>
+    <div class='column left'>
+        <img class='myImage' src='myImage.jpg' alt='Tobi Ademiju'>
+        <b><h2>TOBI<br>ADEMIJU</h2></b>
+        <h4>Intern at <a href='https://internship.zuri.team'>HNGi8 x I4G</a></h4>
+        <hr>
+        <h3>Career Goal</h3>
+        <p>I am a young professional that is passionate about tech.
+            I want to learn as much as I can learn and become really good with it.</p>
+        <hr>
+        <h3>Educational History</h3>
+        <h4>Federal Univeristy of Tech. Oweeri</h4>
+        <p>Class of 2017 | Environmental Technology</p>
+
+        <h4>SS Peter and Mary Juniorate</h4>
+        <p>Class of 2010 | Science Major</p>
+        <hr>
+        <h3>Accomplishments</h3>
+        <ul>
+            <li>Best Corps Member (2018)</li>
+            <li>Intern of the Year (2015)</li>
+            <li>Valedictorian (2010)</li>
+        </ul>
+    </div>
+    <div class='column right'>
+        <img class='HNG' src='HNG.png' alt='HNG Image'>
+        <h3>Work Experience</h3>
+        <h3>Intern</h3>
+        <h4>HNGi8 x I4G | August 2021 - date</h4>
+        <ul>
+            <li>Participating in tasks</li>
+            <li>Collaborating in teams</li>
+            <li>Performing other tasks as assigned</li>
+        </ul>
+        <h3>Intern</h3>
+        <h4>Zuri Training | March 2021 - June 2021</h4>
+        <ul>
+            <li>Attending classes on web development</li>
+            <li>Submitting tasks</li>
+            <li>Collaborating in teams</li>
+            <li>Performing other tasks as assigned</li>
+        </ul>
+        
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML/CSS | Proficiency: Intermediate</li>
+            <li>Javascript | Proficiency: Intermediate</li>
+            <li>NodeJs | Proficiency: Intermediate</li>
+        </ul>
+       
+        <div class='contact'>
+        <h3>Contact Me</h3>
+        <form action='/' method="POST">
+            <label for='name'>Your Name</label>
+            <input type="text" name="name" required><br>
+            <label for='email'>Your Email</label>
+            <input type="email" name="email" required><br>
+            <label for='msg'>Your message:</label><br>
+            <textarea name='msg' cols='30' rows='10' required></textarea><br>
+            <button type='submit'>Submit</button>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

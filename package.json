@@ -1,0 +1,31 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "This is my task for the second stage of the HNG Internship where I am going to build an interactive Resume that will have a contact form to get responses from users",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiveTheFuture/Resume-Build-HNG-Stage-2-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiveTheFuture/Resume-Build-HNG-Stage-2-/issues"
+  },
+  "homepage": "https://github.com/LiveTheFuture/Resume-Build-HNG-Stage-2-#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "googleapis": "^84.0.0",
+    "nodemailer": "^6.6.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
